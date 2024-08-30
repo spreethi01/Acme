@@ -1,0 +1,17 @@
+.registration-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-events-container{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+}

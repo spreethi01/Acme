@@ -1,0 +1,96 @@
+.about-us {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .About_h1, .About_h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: justify;
+    animation: fadeIn 2s;
+  }
+  
+  .club-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .club-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    animation: fadeInUp 1s;
+  }
+  
+  .club-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .club-card h3 {
+    margin-top: 0;
+    color: #007BFF;
+  }
+  
+  .club-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .testimonials {
+    margin-top: 40px;
+  }
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    border-left: 5px solid #007BFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+  }
+  
+  .testimonial p {
+    margin: 0 0 10px 0;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial span {
+    display: block;
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

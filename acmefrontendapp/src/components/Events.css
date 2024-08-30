@@ -1,0 +1,243 @@
+/* Events.css */
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden;
+  /* color: #fff; */
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: move 20s infinite alternate;
+}
+
+.circle1 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #ffc727, #ff9800);
+  top: 10%;
+  left: 5%;
+}
+
+.circle2 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #ffc727, #ff9800);
+  top: 80%;
+  left: 35%;
+}
+
+.circle3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #ffc727, #ff9800);
+  top: 40%;
+  left: 70%;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  mix-blend-mode: overlay;
+}
+
+
+.content {
+  /* position: relative; */
+  z-index: 1;
+  /* color: #ffc727; */
+  /* text-align: center; */
+  /* padding: 20px; */
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+}
+
+/* .content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+} */
+
+/* .content p {
+  font-size: 1.2rem;
+} */
+
+.events-container {
+  /* background: linear-gradient(to bottom, white 50%, black 50%); */
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f94b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .events-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
+    color: #fff;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .register-button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #ffc727;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* flex: 1 0 calc(20% - 20px); Adjusted to fit 5 cards in a row, considering gap */
+    margin-bottom: 20px; /* Space out rows */
+    box-sizing: border-box;
+    flex: 1 1 calc(25% - 20px); /* Adjusts cards to take up approximately 25% of the container width */
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-sub-org {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    margin-bottom: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .card-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 200px;
+    flex: 0 0 calc(20% - 20px);
+    margin-bottom: 20px; 
+  }
+  
+  .card-container:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-sub-org {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 0.8em;
+    color: #888;
+  } 
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .card {
+      flex: 1 0 calc(25% - 20px); /* Adjusted to fit 4 cards in a row */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .card {
+      flex: 1 0 calc(33.33% - 20px); /* Adjusted to fit 3 cards in a row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      flex: 1 0 calc(50% - 20px); /* Adjusted to fit 2 cards in a row */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .card {
+      flex: 1 0 100%; /* Adjusted to fit 1 card in a row */
+    }
+  }
+  

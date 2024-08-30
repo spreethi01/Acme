@@ -1,0 +1,84 @@
+.contact-us {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro,
+  .personal-contact,
+  .acme-contact {
+    margin-bottom: 20px;
+  }
+  
+  .intro-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .intro-heading,
+  .personal-heading,
+  .acme-heading {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .intro-text,
+  .contact-item {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .no-underline {
+    text-decoration: none;
+    color: #3498db;
+  }
+  
+  .no-underline:hover {
+    text-decoration: underline;
+    color: #2980b9;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: #3498db;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item strong {
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-us {
+      padding: 10px;
+    }
+    
+    .intro-title {
+      font-size: 2em;
+    }
+    
+    .intro-heading,
+    .personal-heading,
+    .acme-heading {
+      font-size: 1.3em;
+    }
+    
+    .intro-text,
+    .contact-item {
+      font-size: 1em;
+    }
+  }
+  

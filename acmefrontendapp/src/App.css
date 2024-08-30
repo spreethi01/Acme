@@ -1,0 +1,123 @@
+/* global styles */
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* nav bar style start from here */
+
+.Nav {
+  background-color: #ffc727;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.Nav_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Nav_li {
+  padding: 0px 20px;
+  margin: 0px 10px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* the home styling starts from here */
+
+.Home_Bg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 95vh;
+  margin: 0px 80px;
+}
+
+.Home_ImgDiv {
+  width: 50%;
+  height: 100%;
+}
+
+.Home_Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Home_TDiv {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.Home_H1 {
+  font-size: 4rem;
+}
+
+.trackRecord {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: 50px 0px;
+  border-radius: 10px;
+}
+
+.trackR {
+  width: 100%;
+  padding: 1%;
+  background-color: #d6d6d6;
+  margin: 1px;
+}
+
+.trackR:nth-child(1) {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .trackR:nth-child(3){
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+.trackRh1{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.trackRh2{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* events styling will start from this line... */
+
+.Events{
+    height: 100vh;
+
+}
+
+.Tricon{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HideIt{
+  display: hidden;
+}

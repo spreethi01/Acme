@@ -1,0 +1,41 @@
+.participants-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .event-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .participants-list {
+    margin-top: 20px;
+  }
+  
+  .participants-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .participants-list li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
